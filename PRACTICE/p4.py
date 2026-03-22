@@ -1,13 +1,10 @@
-# #Reverse numbere
-# num=int(input("Enter the number:-"))
-# rev=0
-# while num>0:
-#     digit=num%10
-#     rev=rev*10+digit
-#     num//=10
-# print("Reverse is ",rev)
-
-
+#Reverse numbere
 num=int(input("Enter the number:-"))
-rev=num[::-1]
-print(rev)
+rev=0
+while num>0:
+    digit=num%10
+    rev=rev*10+digit
+    num//=10
+print("Reverse is ",rev)
+
+
