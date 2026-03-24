@@ -1,9 +1,16 @@
-n=int(input("Enter the no.:-"))
+# #Count the number 
+# n=int(input("Enter the no.:-"))
+# count=0
+# while n>0:
+#     count+=1
+#     n//=10
+# print(count)
+
+#count the number using for loop
+num=int(input("Enter the no.:-"))
 count=0
-rev=0
-while n>0:
-    digit=n%10
-    rev=rev*10+digit
-    n//=10
-    count+=1
+for dig in num :
+    if dig>0:
+        count+=1
+        num//=10
 print(count)
