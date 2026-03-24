@@ -1,0 +1,10 @@
+#Addition of user numbers
+n=int(input("Enter the number:="))
+rev=0
+sum=0
+while n>0:
+    digit=n%10
+    rev=rev*10+digit
+    n//=10
+    sum+=digit
+print(sum)
