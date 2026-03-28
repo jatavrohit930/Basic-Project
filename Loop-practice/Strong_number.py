@@ -1,0 +1,18 @@
+#print strong number from 1 to n
+n = int(input("Enter the no."))
+temp = n
+sum = 0
+while temp>0:
+    d = temp%10
+    
+    fact=1
+    for i in range(1,d+1):
+        fact *= i
+
+    sum += fact
+    temp //= 10
+
+if sum==n:
+    print(n,"is a strong number")
+else:
+    print(n,"is not strong number")
